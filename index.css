@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600&display=swap');
+
+:root{
+    --primary-color : white;
+    --sec-color: #2EC4B6;
+    --primary-backgroud-color: #FFFFFF;
+    --secondary-background-color: #FFB562;
+    --sec-bg-bold: #FF9F1C;
+    --test-bg-color: #CBF3F0;
+    --font-family: 'Poppins', sans-serif;
+    --title-font-size: 32px;
+    --content-font-size: 16px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--primary-backgroud-color);
+/*    color: var(--primary-color);*/
+    font-family: var(--font-family);
+    overflow-x: hidden;
+}
+
+.main-title{
+    color: var(--sec-color);
+    font-weight: 400;
+}
+
+.main-sub-title{
+    color: #828282;
+}
+
+.box{
+    /* border: 1px solid #858585; */
+    background-color: white;
+    box-shadow: 0 .5rem 1.2rem rgba(0,0,0,.2);
+    color: #858585;
+    padding: 1em 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.box:hover{
+    color: white;
+    box-shadow: 10px 10px 0px var(--secondary-background-color), -10px -10px 0px var(--secondary-background-color);
+    background: var(--sec-color);
+    /* border: 1px solid var(--sec-color); */
+}
+
+header, .section-1, .section-3, .section-4{
+    scroll-margin-top: 56px;
+}
+
+
+@keyframes rotate {
+    from{
+        rotate: 0deg;
+    }
+
+    50%{
+        scale: 1 1.5;
+    }
+
+    to{
+        rotate: 360deg;
+    }
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+.box:nth-child(2){
+    transition-delay: 200ms;
+}
+
+.box:nth-child(3){
+    transition-delay: 300ms;
+}
+
+.box:nth-child(4){
+    transition-delay: 400ms;
+}
+
+.nav-link{
+    color: var(--sec-color);
+}
+
+.nav-link:hover, .nav-link:focus, .nav-link:active, .active {
+    color: var(--sec-bg-bold);
+  }
+
+
+#hero{
+    margin-top: 56px;
+    min-height: calc(100vh - 56px);
+}
+
+.section-2 .container,.section-3 .container{ 
+    padding-block: 56px;
+    min-height: calc(100vh - 56px);
+}
+
+.section-4 .container{ 
+    padding-block: 56px;
+    min-height: calc(100vh - 19vh);
+}
+
+.section-2, .section-4{
+    background-color: var(--secondary-background-color);
+}
+
+.section-3{
+    background-color: var(--primary-backgroud-color);
+    color: var(--sec-bg-bold);
+    display: grid;
+    place-content: center;
+}
+
+.section-5 {
+    border: 1px solid red;
+    padding-block: 2em;
+    background: lightcoral;
+    color: white;
+}
+
+.section-5 .text-center {
+    font-size: 21px;
+    margin-bottom: 1em;
+}
+
+.section-5 .service-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:2em;
+}
+
+.s-title {
+    width: fit-content;
+    margin: auto;
+    font-size: var(--title-font-size);
+    padding-block: 1em;
+}
+
+.s-content{
+    font-size: var(--content-font-size);
+}
+
+.bottom-3{
+    display: grid;
+/*    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));*/
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    margin-inline: 2rem;
+    margin-bottom: 2em;
+    gap: 1.5em;
+}
+
+.main-btn{
+    all: unset;
+    border: 1px solid var(--sec-color);
+    padding: 0.5em 1em;
+    color: var(--sec-color);
+    transition: 0.3s;
+}
+
+.main-btn:hover{
+    background-color: var(--sec-color);
+    color: white;
+    border: 1px solid var(--sec-color);
+}
+
+.collapse-bar > div{
+    width: 100%;
+    margin-block: 1em;
+    background: var(--sec-color);
+    border: var(--sec-color);
+    color: white;
+}
+
+.collapse-bar > div:hover{
+    width: 100%;
+    margin-block: 1em;
+    background: var(--sec-color);
+    color: #f5f5f5;
+    border: var(--sec-color);
+}
+
+.collapse-bar .card {
+    color: var(--sec-color);
+    background: var(--primary-backgroud-color);
+}
+
+.btn .collapsed:active, .btn .collapsed:focus-visible {
+    background: var(--sec-color);
+  }
+
+
+  .footer{background-color: var(--primary-backgroud-color);padding-block: 1em;}
+  .footer > .container{
+    display: grid;
+    grid-template-columns: 1fr 0.4fr;
+  }
+
+  .f-icons {
+    display: flex;
+    justify-content: space-around;
+    color: var(--sec-color);
+  }
+
+ .icon-box{
+    border: 1px solid red;
+ }
+
+ .scroll-sec{
+    display: flex;
+ }
+
+ .call-support{
+    padding: 2em 4em;
+    margin-top:3em;
+}
+
+.con-title {
+    font-size: 31px;
+    margin-bottom: 1em;
+    color: green;
+}
+
+.con-body{
+    line-height: 2em;
+    letter-spacing: 0.5px;
+    font-weight: 300;
+}
+
