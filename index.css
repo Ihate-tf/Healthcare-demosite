@@ -107,10 +107,17 @@ header, .section-1, .section-3, .section-4{
     min-height: calc(100vh - 56px);
 }
 
-.section-2 .container,.section-3 .container{ 
+/*.section-2 .container,.section-3 .container{ 
     padding-block: 56px;
     min-height: calc(100vh - 56px);
 }
+*/
+
+.section-2 .container{ 
+    padding-block: 56px;
+    min-height: calc(100vh - 56px);
+}
+
 
 .section-4 .container{ 
     padding-block: 56px;
@@ -160,9 +167,9 @@ header, .section-1, .section-3, .section-4{
 
 .bottom-3{
     display: grid;
-/*    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));*/
+/*  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));*/
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    margin-inline: 2rem;
+/*  margin-inline: 2rem;*/
     margin-bottom: 2em;
     gap: 1.5em;
 }
@@ -244,3 +251,43 @@ header, .section-1, .section-3, .section-4{
     font-weight: 300;
 }
 
+.box .box-con {
+    line-height: 1.8em;
+    word-spacing: 3px;
+    letter-spacing: 0.15px;
+}
+
+.h-cycle{margin: auto;width: fit-content;}
+
+.h-cycle img {
+    height: 500px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.list-sec{
+    border: 1px solid #d5d5d5;
+    margin: 2em 4em;
+    border-radius:5px;
+    counter-increment: myIndex;
+}
+
+.list-head{
+    margin-bottom:1em;
+    padding-top: 1em;
+    font-size: 18px;
+}
+
+.list-head::before {
+    content:counter(myIndex);
+    border-radius:25px;
+    background:#d5d5d5;
+    padding: 0.5em 1em;
+    margin-left: -1.3em;
+    margin-right: 0.5em;
+}
+
+.list-title{
+    padding-inline:2em;
+    padding-bottom:1em;
+}
