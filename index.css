@@ -291,3 +291,36 @@ header, .section-1, .section-3, .section-4{
     padding-inline:2em;
     padding-bottom:1em;
 }
+
+
+/*Media queries section starts*/
+
+@media screen and (max-width: 480px) {
+  .bottom-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+
+
+.call-support {
+  padding: 2em 4em;
+  margin-top: 3em;
+  padding: 1em 0.5em;
+}
+
+.section-5 .service-list{
+    flex-direction: column;
+}
+
+.h-cycle img{
+    height: auto;
+    width: 100%;
+    object-fit: contain;
+}
+
+.list-sec{
+    margin: 2em;
+}
+
+}
+/*Media queries section ends*/
