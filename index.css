@@ -133,10 +133,21 @@ header, .section-1, .section-3, .section-4{
 }
 
 .section-3{
-    background-color: var(--primary-backgroud-color);
+/*    background-color: var(--primary-backgroud-color);*/
+    background-color: #d6fff0;
     color: var(--sec-bg-bold);
     display: grid;
     place-content: center;
+}
+
+.bottom-3 .box{
+    height: 280px;
+    display: grid;
+    place-content: space-evenly;    
+}
+
+.bottom-3 .box > h4{
+    color: #ff9f1c;
 }
 
 .section-5 {
@@ -257,6 +268,7 @@ header, .section-1, .section-3, .section-4{
     line-height: 1.8em;
     word-spacing: 3px;
     letter-spacing: 0.15px;
+    color: #666C87;
 }
 
 .h-cycle{margin: auto;width: fit-content;}
@@ -364,6 +376,10 @@ header, .section-1, .section-3, .section-4{
 
 .list-sec{
     margin: 2em;
+}
+
+.bottom-3 .box{
+    height: auto;
 }
 
 }
