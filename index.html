@@ -16,15 +16,14 @@
   <body>
 <!-- Example Code -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm" style="background-color: #FFF3;backdrop-filter: blur(5px);
-        ">
+        <nav class="navbar fixed-top navbar-expand-sm" style="background-color: #FFF3;backdrop-filter: blur(5px);">
         <div class="container">
             <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler text-white" type="button" style="background: #F99417;" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav" style="gap:3em;">
+            <ul class="navbar-nav">
                 <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#hero">Home</a>
                 </li>
@@ -47,9 +46,7 @@
         <div class="container">
         <div class="row">
             <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1 hidden">
-            <!-- <h1 class="main-title">Better Solutions For Your Business</h1> -->
             <h1 class="main-title">Healthcare That Puts You First</h1>
-            <!-- <h5 class="main-sub-title">We are team of talented designers making websites with Bootstrap</h5> -->
             <h5 class="main-sub-title"> We understand that your health is your most valuable asset, and we are dedicated to ensuring that you receive the care and attention you deserve.</h5>
             <div class="d-flex justify-content-center justify-content-lg-start mt-3">
                 <button class="main-btn">Get Started <i class="fas fa-long-arrow-alt-right"></i></button>
@@ -78,8 +75,8 @@
 
     </section>
 
-    <section class="call-support">
-        <div class="con-title">Call Center Support</div>
+    <section class="call-support" id="sec2">
+        <div class="con-title text-center">Call Center Support</div>
         <div class="con-body">
             <span>Your Partner in Patient Care</span>
             <ul>
@@ -157,15 +154,16 @@
                     </div>
                 </div>
         </div>
-            <div class="h-cycle"> 
-                <img src="img/one1.png" class="img-fluid" alt="healthcare-cycle">
-                <span>Overall, at physician billing and coding we offer comprehensive services to healthcare providers to manage their revenue cycle effectively, maximize reimbursement, and ensure compliance with applicable regulations and guidelines</span> 
-            </div>
     </div>
     </section>
 
+    <div class="h-cycle"> 
+        <img src="img/one1.png" class="img-fluid" alt="healthcare-cycle">
+        <span>Overall, at physician billing and coding we offer comprehensive services to healthcare providers to manage their revenue cycle effectively, maximize reimbursement, and ensure compliance with applicable regulations and guidelines</span> 
+    </div>
+
     <section class="call-support">
-        <div class="con-title">Digital Marketing service</div>
+        <div class="con-title text-center">Digital Marketing service</div>
         <div class="con-body">
             <span>Marketing service in Patient Care</span>
             <ul>
@@ -176,7 +174,7 @@
         </div>
     </section>
 
-    <section style="margin-bottom: 5em;margin-top: 3rem;">
+    <section style="margin-bottom:5em;">
         <div style="font-size: 21px;text-align: center;">List of Services we offer for your practice or DME company</div>
         <div class="list-sec">
             <div class="list-head">Website Design and Development</div>
@@ -224,13 +222,16 @@
         <div class="container">
             <div class="s-title  hidden">The uses of it</div>
             <div class="row">
-            <div class="col-lg-6 ls-2 hidden">
+            <div class="hidden about-con mb-3">
                 <div class="s-content rs-section">
-                    <div><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque inventore in iusto totam. Fuga quasi tempora veritatis nisi ab cupiditate, nostrum doloribus ea eaque? Sapiente neque illum fugiat ea.</span></div>
+                    <div><span>Physician billing and code is a leading medical billing company based in the United States, dedicated to providing comprehensive and efficient medical billing services to healthcare providers across the nation. With years of experience in the industry, we understand the complexities and challenges associated with medical billing and reimbursement, and we are committed to helping our clients optimize their revenue cycle management.</span></div>
                 </div>
             </div>
-            <div class="col-lg-6 rs-2 hidden" style="transition-delay: 250ms;">
-                <div><span>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim atque inventore in iusto totam. Fuga quasi tempora veritatis nisi ab cupiditate, nostrum doloribus ea eaque? Sapiente neque illum fugiat ea.</span></div>
+             <div class="hidden about-con mb-3" style="transition-delay: 250ms;">
+                <div><span>At physician billing and code, we pride ourselves on our personalized approach to client service. We understand that each practice is unique, and we tailor our solutions to meet the specific needs and requirements of our clients. Our dedicated account managers work closely with our clients to understand their individual goals and challenges, and develop customized strategies to optimize their revenue cycle, reduce denials, and increase cash flow.</span></div>
+            </div>
+             <div class="hidden about-con mb-3" style="transition-delay: 250ms;padding-bottom: 3em;">
+                <div><span>Partner with physician billing and code and experience the benefits of a trusted and reliable medical billing partner. Let us handle the intricacies of medical billing so that you can focus on what you do best - providing exceptional patient care. Contact us today to learn more about our services and how we can streamline your medical billing process.</span></div>
             </div>
         </div>
         </div>
@@ -239,11 +240,24 @@
     <footer>
         <div class="footer">
             <div class="container">
-                <div class="f-title">Content</div>
-                <div class="f-icons">
-                    <div class="icon"><i class="fab fa-facebook"></i></div>
-                    <div class="icon"><i class="fab fa-instagram"></i></div>
-                    <div class="icon"><i class="fab fa-linkedin"></i></div>
+                <div class="footer-img">
+                    <img class="img-fluid" style="height:60px;" src="img/one.png">
+                </div>
+
+                <div class="footer-con1">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum </div>
+                <hr>
+                    <div class="footer-address">
+                        1120 Lorem ipsum dolor sit amet, KC 179050, Chandigarh.        
+                    </div>
+                    <div class="footer-number">
+                        +01 2345 6789 12
+                    </div>
+                <div class="social-media d-flex justify-content-center">
+                    <div>q</div>
+                    <div>w</div>
+                    <div>e</div>
+                    <div>s</div>
                 </div>
             </div>
         </div>
