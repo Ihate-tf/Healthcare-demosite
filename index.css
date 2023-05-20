@@ -332,7 +332,10 @@ header, .section-1, .section-3, .section-4{
     width: auto;
 }
 */
-  .footer{background-color: var(--primary-backgroud-color);padding-block: 1em;}
+  .footer{
+    background: aliceblue;
+/*    background-color: var(--primary-backgroud-color);*/
+    padding-block: 1em;}
 
   .footer > .container{
     /*display: grid;*/
