@@ -194,7 +194,7 @@ header, .section-1, .section-3, .section-4{
 }
 
 .s-content{
-    font-size: var(--content-font-size);
+/*    font-size: var(--content-font-size);*/
 }
 
 .bottom-3{
@@ -424,6 +424,11 @@ header, .section-1, .section-3, .section-4{
 
 .list-title{
     text-align: center;
+}
+
+.section-4 .container {
+    padding-inline: 2em;
+    font-size: 14px;
 }
 
 }
